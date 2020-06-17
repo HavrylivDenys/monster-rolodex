@@ -13,7 +13,15 @@ class App extends Component {
     };
   }
   componentDidMount() {
-    fetch("https://jsonplaceholder.typicode.com/users")
+    let headers = new Headers();
+
+    headers.append('Content-Type', 'application/json');
+    headers.append('Accept', 'application/json');
+    fetch("https://jsonplaceholder.typicode.com/users", {
+        mode: 'cors',
+        method: 'GET',
+        headers: headers
+    })
       .then((response) => response.json())
       .then((users) => this.setState({ monsters: users }));
   }
