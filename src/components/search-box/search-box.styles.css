@@ -1,17 +1,17 @@
 .search {
     -webkit-appearance: none;
-    background-color: #edf7f6;
+    background-color: #adfaf7;
     border-radius: 15px;
-    border: 1px solid #edf7f6;
-    color: #FFA8B6;
+    border: 1px solid #adfaf7;
+    color: #001f3f;
     outline: none;
     padding: 10px;
-    width: 150px;
+    width: 60vw;
     line-height: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
 .search::placeholder {
-    color: #FFA8B6;
+    color: #001f3f;
 }
