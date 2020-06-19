@@ -14,9 +14,6 @@ class App extends Component {
   }
   componentDidMount() {
     let headers = new Headers();
-
-    headers.append('Content-Type', 'application/json');
-    headers.append('Accept', 'application/json');
     fetch("https://jsonplaceholder.typicode.com/users", {
         mode: 'cors',
         method: 'GET',
